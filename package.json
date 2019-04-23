@@ -1,0 +1,19 @@
+{
+  "name": "rotate-travels",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec \"node -r dotenv/config\" src/index.js",
+    "launch": "node -r dotenv/config src/index.js",
+    "test": "jest"
+  },
+  "dependencies": {
+    "moment": "^2.24.0",
+    "mongodb": "^3.2.3"
+  },
+  "devDependencies": {
+    "dotenv": "^7.0.0",
+    "jest": "^24.7.1"
+  }
+}
