@@ -17,4 +17,4 @@ ENV NODE_ENV=production MONGO_HOST=192.168.0.42 MONGO_PORT=27017 MONGO_DB=ECSO-D
 # Apply cron job
 RUN crontab /app
 
-CMD ["/usr/sbin/crond", "-f"]
+CMD ["/usr/sbin/crond", "-f", "-L", "/dev/stdout"]
