@@ -15,6 +15,6 @@ COPY crontab /app
 ENV NODE_ENV=production MONGO_HOST=192.168.0.42 MONGO_PORT=27017 MONGO_DB=ECSO-DB MONGO_USER=ecso_user MONGO_PASS=Qwerty12
 
 # Apply cron job
-RUN crontab /app
+RUN crontab /app/crontab
 
-CMD ["/usr/sbin/crond", "-f", "-L", "/dev/stdout"]
+CMD ["crond", "-f", "-L", "/dev/stdout"]
