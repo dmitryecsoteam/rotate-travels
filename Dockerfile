@@ -1,6 +1,6 @@
 FROM node:8.11-alpine
 
-RUN apt-get update && apt-get -y install cron
+RUN apk add --no-cache cron
 
 # Create directory 
 WORKDIR /app
