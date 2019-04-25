@@ -1,1 +1,1 @@
-* * * * * echo hello
+* * * * * node /app/index.js
