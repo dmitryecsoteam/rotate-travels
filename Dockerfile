@@ -1,7 +1,5 @@
 FROM node:8.11-alpine
 
-RUN apk add --no-cache cron
-
 # Create directory 
 WORKDIR /app
 
@@ -19,4 +17,4 @@ ENV NODE_ENV=production MONGO_HOST=192.168.0.42 MONGO_PORT=27017 MONGO_DB=ECSO-D
 # Apply cron job
 RUN crontab /app
 
-CMD ["cron", "-f"]
+CMD ["/usr/sbin/crond", "-f"]
