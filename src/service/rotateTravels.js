@@ -1,5 +1,4 @@
-//const mongo = require('../server/mongo');
-//const moment = require('moment');
+require('log-timestamp');
 
 const rotateTravels = async (today, db) => {
 

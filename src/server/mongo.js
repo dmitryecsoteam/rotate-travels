@@ -1,4 +1,5 @@
 const MongoClient = require('mongodb').MongoClient;
+require('log-timestamp');
 
 const MONGO_HOST = process.env.MONGO_HOST;
 const MONGO_PORT = process.env.MONGO_PORT;

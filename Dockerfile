@@ -17,4 +17,5 @@ ENV NODE_ENV=production MONGO_HOST=192.168.0.42 MONGO_PORT=27017 MONGO_DB=ECSO-D
 RUN echo "* * * * * node /app/index.js" >> /app/crontab
 RUN crontab /app/crontab
 
+# Execute cron scheduler and redirect output to stdout
 CMD ["crond", "-f", "-L", "/dev/stdout"]

@@ -1,6 +1,6 @@
 {
   "name": "rotate-travels",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "index.js",
   "license": "MIT",
   "scripts": {
@@ -9,6 +9,7 @@
     "test": "jest"
   },
   "dependencies": {
+    "log-timestamp": "^0.3.0",
     "moment": "^2.24.0",
     "mongodb": "^3.2.3"
   },
